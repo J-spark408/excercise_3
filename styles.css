@@ -1,7 +1,74 @@
+.container {
+    background: linear-gradient(90deg, rgb(126, 228, 228) 0%, lightblue 60%, rgb(215, 240, 249) 85%);
+    border: 5px solid;
+    border-radius: 15px;
+    box-shadow: 5px 7px 10px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
+    width: 430px;
+}
 
+.calculation {
+    width: 81%;
+}
 
-.column {
+.output {
+    width: 100%;
+    background-color: white;
+    border: 2px solid white black;
+    text-align: end;
+    font-size: 60px;
+}
+
+.output:focus {
+    outline: none;
+}
+
+.column-btn {
+    padding: 11px;
     float: left;
-    width: 25%;
-    padding: 15px;
+    width: 18%;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+
+input,
+button {
+    padding: 20px 32px;
+    border-radius: 10px;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 7px;
+    width: 90px;
+    height: 90px;
+    box-shadow: 4px 5px 5px gray;
+}
+
+#clear {
+    background: linear-gradient(180deg, red 0%, red 60%, darkred 85%);
+    color: white;
+}
+
+#clear:hover {
+    background: linear-gradient(180deg, pink 0%, lightpink 60%, hotpink 85%);
+}
+
+.number,
+.symbol {
+    background: linear-gradient(180deg, white 0%, lightgrey 60%, grey 85%);
+}
+
+.number:hover,
+.symbol:hover {
+    background: linear-gradient(180deg, white 0%, grey 85%);
 }

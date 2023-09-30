@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 
 <html>
-<head>
 
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="column">
-            <button>7</button>
+        <div class="calculation">
+            <input type="text" class="output" id="txt-input" disabled>
+        </div>
+        <div class="column-btn">
+            <button class="number">7</button>
+            <button class="number">4</button>
+            <button class="number">1</button>
+            <button id="clear">C</button>
+        </div>
+        <div class="column-btn">
+            <button class="number">8</button>
+            <button class="number">5</button>
+            <button class="number">2</button>
+            <button class="number">0</button>
+        </div>
+        <div class="column-btn">
+            <button class="number">9</button>
+            <button class="number">6</button>
+            <button class="number">3</button>
+            <button id="equal" class="symbol">=</button>
+        </div>
+        <div class="column-btn">
+            <button id="plus" class="symbol">+</button>
+            <button id="minus" class="symbol">-</button>
+            <button id="multi" class="symbol">*</button>
+            <button id="divide" class="symbol">/</button>
         </div>
     </div>
-    <div class="container">
-        <div class="column">
-            <button>8</button>
-        </div>
-    </div>
-    <div class="container">
-        <div class="column">
-            <button>9</button>
-        </div>
-    </div>
-    <div class="container">
-        <div class="column">
-            <button>+</button>
-        </div>
-    </div>
+
+    <script src="func.js"></script>
 </body>
+
 </html>
